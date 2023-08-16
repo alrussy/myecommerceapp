@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
+import 'package:ecommerce_app/res/fonts/app_fonts.dart';
 import 'package:flutter/material.dart';
 
 class CustomBodyLogin extends StatelessWidget {
@@ -11,7 +11,7 @@ class CustomBodyLogin extends StatelessWidget {
       textBody,
       style: TextStyle(
         color: Colors.white60,
-        fontFamily: FontsApp.alkatra,
+        fontFamily: AppFonts.alkatra,
         fontSize: 18,
         fontWeight: FontWeight.w400,
         height: 2,

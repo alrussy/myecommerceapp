@@ -1,10 +1,8 @@
 import 'package:ecommerce_app/controller/login_controller.dart';
 import 'package:ecommerce_app/controller/onboarding_controller.dart';
-import 'package:ecommerce_app/core/constant/image_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import '../../core/constant/color_app.dart';
+import '../../res/colors/app_colors.dart';
 import '../widget/onBoarding/continue_button.dart';
 import '../widget/onBoarding/dot_controller.dart';
 import '../widget/onBoarding/page_view.dart';
@@ -17,7 +15,7 @@ class OnBoarding extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      backgroundColor:ColorApp.backgroundOnBoarding ,
+      backgroundColor:AppColors.backgroundOnBoarding ,
       body: Column(
           children: [
         OnBoardingPageView(),

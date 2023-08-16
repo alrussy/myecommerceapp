@@ -1,8 +1,7 @@
 
 import 'package:ecommerce_app/controller/login_controller.dart';
-import 'package:ecommerce_app/core/constant/color_app.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
 import 'package:ecommerce_app/res/colors/app_colors.dart';
+import 'package:ecommerce_app/res/fonts/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -21,7 +20,7 @@ class CustomCheckBox extends StatelessWidget {
           onChanged:onChanged,
           activeColor:AppColors.primary,
         ),
-        Text(textCheckBox,textAlign: TextAlign.left,style:TextStyle(color:AppColors.primary,fontFamily: FontsApp.alkatra,fontSize: 15))
+        Text(textCheckBox,textAlign: TextAlign.left,style:TextStyle(color:AppColors.primary,fontFamily: AppFonts.alkatra,fontSize: 15))
 
       ],
     );

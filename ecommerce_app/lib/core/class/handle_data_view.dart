@@ -1,7 +1,7 @@
 
 import 'package:ecommerce_app/core/class/status_request.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
-import 'package:ecommerce_app/core/constant/image_assets.dart';
+import 'package:ecommerce_app/res/fonts/app_fonts.dart';
+import 'package:ecommerce_app/res/images/image_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -23,7 +23,7 @@ class HandlingDataview extends StatelessWidget {
             children: [
               Lottie.asset(ImageAssets.LOTTIE_OFFLINE,),
               Container(
-                child: Text('Offline',style: TextStyle(fontSize: 30,fontFamily: FontsApp.sriracha),
+                child: Text('Offline',style: TextStyle(fontSize: 30,fontFamily: AppFonts.sriracha),
                 ),
               )
             ],
@@ -63,7 +63,7 @@ mainAxisAlignment: MainAxisAlignment.center,
 children: [
 Lottie.asset(ImageAssets.LOTTIE_OFFLINE,),
 Container(
-child: Text('Offline',style: TextStyle(fontSize: 30,fontFamily: FontsApp.sriracha),),),
+child: Text('Offline',style: TextStyle(fontSize: 30,fontFamily: AppFonts.sriracha),),),
 
 ],
 ),

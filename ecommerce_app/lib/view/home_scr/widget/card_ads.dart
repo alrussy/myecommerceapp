@@ -1,5 +1,6 @@
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
 import 'package:flutter/material.dart';
+
+import '../../../res/fonts/app_fonts.dart';
 
 class CardAds extends StatelessWidget {
   const CardAds({Key? key}) : super(key: key);
@@ -56,8 +57,8 @@ class CardAds extends StatelessWidget {
 
 
           ListTile(
-            title: Text('Ads Title',style: TextStyle(fontSize: 35,color: Colors.white,fontFamily: FontsApp.sriracha),),
-            subtitle:Text('subject........................',style: TextStyle(fontSize: 20,color: Colors.white,fontFamily: FontsApp.alkatra),),
+            title: Text('Ads Title',style: TextStyle(fontSize: 35,color: Colors.white,fontFamily: AppFonts.sriracha),),
+            subtitle:Text('subject........................',style: TextStyle(fontSize: 20,color: Colors.white,fontFamily: AppFonts.alkatra),),
 
           ),
         ],

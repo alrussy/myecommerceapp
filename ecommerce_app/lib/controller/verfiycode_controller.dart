@@ -2,11 +2,11 @@
 import 'dart:async';
 
 import 'package:ecommerce_app/core/class/status_request.dart';
-import 'package:ecommerce_app/core/constant/route_app.dart';
 import 'package:ecommerce_app/core/function/handling_data.dart';
 import 'package:ecommerce_app/data/model/user_entity.dart';
 import 'package:ecommerce_app/data/services/sign_up_service.dart';
 import 'package:ecommerce_app/data/services/verifiy_code_service.dart';
+import 'package:ecommerce_app/res/routes/routes_name.dart';
 import 'package:ecommerce_app/utils/utils.dart';
 import 'package:get/get.dart';
 
@@ -25,11 +25,11 @@ class VerfiyCodeController extends GetxController{
   bool isCansel=false;
 
   verifiyCode(String code)async{
-    if(code==_vCode && prevPage==RouteApp.SIGNUP) {
+    if(code==_vCode && prevPage==RoutesName.SIGNUP) {
       await signUp(user);
     }
-   else if (code==_vCode && prevPage==RouteApp.FORGET_PASWORD) {
-      Get.offAllNamed(RouteApp.RESET_PASSWORD,arguments: user);
+   else if (code==_vCode && prevPage==RoutesName.FORGET_PASWORD) {
+      Get.offAllNamed(RoutesName.RESET_PASSWORD,arguments: user);
     }
    else{
       Get.back();
@@ -43,7 +43,7 @@ class VerfiyCodeController extends GetxController{
     var response = await signUpService.signUp(myuser);
     statusRequest = handlingData(response);
     if(statusRequest==StatusRequest.SUCCESS)
-      Get.offAllNamed(RouteApp.LOGIN);
+      Get.offAllNamed(RoutesName.LOGIN);
     print(statusRequest);
     update();
   }

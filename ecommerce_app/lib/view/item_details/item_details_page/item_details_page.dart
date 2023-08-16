@@ -1,7 +1,7 @@
 
 import 'package:ecommerce_app/controller/details_Item_controller.dart';
-import 'package:ecommerce_app/core/constant/color_app.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
+import 'package:ecommerce_app/res/colors/app_colors.dart';
+import 'package:ecommerce_app/res/fonts/app_fonts.dart';
 import 'package:ecommerce_app/view/item_details/widget/add_button_widget.dart';
 import 'package:ecommerce_app/view/item_details/widget/increment_widget.dart';
 import 'package:flutter/material.dart';
@@ -44,14 +44,14 @@ class ItemDetailsPage extends StatelessWidget {
                   // }, child:Icon(Icons.shopping_basket)),
 
     Text('${itemDetailsController.item.name}',
-    style: TextStyle(fontSize: 30,fontFamily: FontsApp.alkatra,fontWeight: FontWeight.w400,color: ColorApp.text),),
+    style: TextStyle(fontSize: 30,fontFamily: AppFonts.alkatra,fontWeight: FontWeight.w400,color: AppColors.text),),
                   SizedBox(
                     height: 120,
                     child: Column(
                       children: [
                         IncrementCount(),
                         GetBuilder<ItemDetailsController>(builder: (controller)=>
-                            Text('You have ${itemDetailsController.count} in your card ${itemDetailsController.item.priceAfterDescount}\$',style: TextStyle(fontSize: 25,fontFamily: FontsApp.alkatra,fontWeight: FontWeight.w400,color: ColorApp.primary),)),
+                            Text('You have ${itemDetailsController.count} in your card ${itemDetailsController.item.priceAfterDescount}\$',style: TextStyle(fontSize: 25,fontFamily: AppFonts.alkatra,fontWeight: FontWeight.w400,color: AppColors.primary),)),
                       ],
                     ),
                   )
@@ -64,15 +64,15 @@ class ItemDetailsPage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Divider(thickness: 2,color: ColorApp.primary,),
+                Divider(thickness: 2,color: AppColors.primary,),
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: Text('description',
                     style: TextStyle(
                         fontSize: 23,
-                        fontFamily: FontsApp.alkatra,
+                        fontFamily: AppFonts.alkatra,
                         fontWeight: FontWeight.w400,
-                        color: ColorApp.primary),),
+                        color: AppColors.primary),),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(10.0),
@@ -80,9 +80,9 @@ class ItemDetailsPage extends StatelessWidget {
                     itemDetailsController.item.descraption!,
                     style: TextStyle(
                         fontSize: 15,
-                        fontFamily: FontsApp.alkatra,
+                        fontFamily: AppFonts.alkatra,
                         fontWeight: FontWeight.w400,
-                        color: ColorApp.text),
+                        color: AppColors.text),
                     textAlign:TextAlign.start,
                   ),
 

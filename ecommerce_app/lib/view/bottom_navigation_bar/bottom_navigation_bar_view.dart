@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/controller/bottom_navigation_bar/bottom_navigation_bar_controller.dart';
-import 'package:ecommerce_app/core/constant/route_app.dart';
 import 'package:ecommerce_app/core/function/alert_exit_app.dart';
 import 'package:ecommerce_app/core/service/service.dart';
 import 'package:ecommerce_app/res/colors/app_colors.dart';
+import 'package:ecommerce_app/res/routes/routes_name.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -21,7 +21,7 @@ class BottomNavigationBarView extends StatelessWidget {
                   child: Icon(Icons.shopping_cart_outlined),
                   onPressed: () {
                     //serviceApp.sharedPreferences.clear();
-                    Get.toNamed(RouteApp.MY_CARD_PAGE);
+                    Get.toNamed(RoutesName.MY_CARD_PAGE);
                   },
                 ),
                 floatingActionButtonLocation:

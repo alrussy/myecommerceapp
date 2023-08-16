@@ -1,6 +1,5 @@
-import 'package:ecommerce_app/core/constant/color_app.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
 import 'package:ecommerce_app/res/colors/app_colors.dart';
+import 'package:ecommerce_app/res/fonts/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -26,7 +25,7 @@ class CustomButtonLogin extends StatelessWidget {
           padding: MaterialStatePropertyAll(EdgeInsets.symmetric(horizontal: 50)),
         ),
 
-        child: Text(textButton,style: TextStyle(fontSize: 20,fontFamily: FontsApp.alkatra),)
+        child: Text(textButton,style: TextStyle(fontSize: 20,fontFamily: AppFonts.alkatra),)
 
     );
   }

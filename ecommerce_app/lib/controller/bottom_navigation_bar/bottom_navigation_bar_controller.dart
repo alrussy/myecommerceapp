@@ -3,7 +3,6 @@
 
 import 'package:ecommerce_app/controller/favorite_controller.dart';
 import 'package:ecommerce_app/controller/home_controller.dart';
-import 'package:ecommerce_app/core/constant/color_app.dart';
 import 'package:ecommerce_app/data/model/favorite.dart';
 import 'package:ecommerce_app/view/favorite/page/favorite_page.dart';
 import 'package:ecommerce_app/view/home_scr/home_page.dart';

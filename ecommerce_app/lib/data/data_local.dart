@@ -2,8 +2,8 @@
 import 'package:ecommerce_app/data/model/Items.dart';
 import 'package:ecommerce_app/data/model/bottom_navigotion_bar.dart';
 import 'package:ecommerce_app/data/model/my_card.dart';
+import 'package:ecommerce_app/res/images/image_assets.dart';
 import 'package:flutter/material.dart';
-import '../core/constant/image_assets.dart';
 import 'model/onboardingmodel.dart';
 
 List<OnBoardingModel> onBoardingList=[

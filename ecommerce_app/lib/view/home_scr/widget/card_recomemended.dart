@@ -1,6 +1,5 @@
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
-import 'package:ecommerce_app/core/constant/image_assets.dart';
 import 'package:ecommerce_app/data/model/Items.dart';
+import 'package:ecommerce_app/res/fonts/app_fonts.dart';
 import 'package:flutter/material.dart';
 
 class CardRecommended extends StatelessWidget {
@@ -25,7 +24,7 @@ class CardRecommended extends StatelessWidget {
               Positioned(
                   left: 12,
                   top: 2,
-                  child: Text('item name',style: TextStyle(fontSize: 20,color: Colors.black87,fontWeight: FontWeight.w500,fontFamily: FontsApp.alkatra),),)
+                  child: Text('item name',style: TextStyle(fontSize: 20,color: Colors.black87,fontWeight: FontWeight.w500,fontFamily: AppFonts.alkatra),),)
               ,Container(
                 width: 140,
                 height: 100,

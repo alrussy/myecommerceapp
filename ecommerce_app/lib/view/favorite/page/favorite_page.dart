@@ -2,13 +2,14 @@ import 'package:ecommerce_app/controller/favorite_controller.dart';
 import 'package:ecommerce_app/controller/home_controller.dart';
 import 'package:ecommerce_app/controller/item_controller.dart';
 import 'package:ecommerce_app/core/class/handle_data_view.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
 import 'package:ecommerce_app/data/model/Items.dart';
 import 'package:ecommerce_app/data/model/category.dart';
 import 'package:ecommerce_app/res/routes/routes_name.dart';
 import 'package:ecommerce_app/view/favorite/widget/card_item_favorite.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../../res/fonts/app_fonts.dart';
 
 class FavoritePage extends StatelessWidget {
   const FavoritePage({Key? key}) : super(key: key);
@@ -87,7 +88,7 @@ class FavoritePage extends StatelessWidget {
         ),
         Flexible(
           child: TextField(
-            style: TextStyle(fontSize: 20, fontFamily: FontsApp.alkatra),
+            style: TextStyle(fontSize: 20, fontFamily: AppFonts.alkatra),
             decoration: InputDecoration(
               hintText: 'Search',
               hintStyle: TextStyle(color: Colors.black45),

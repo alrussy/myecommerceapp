@@ -1,8 +1,9 @@
 import 'package:ecommerce_app/controller/onboarding_controller.dart';
-import 'package:ecommerce_app/core/constant/color_app.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../../res/colors/app_colors.dart';
+import '../../../res/fonts/app_fonts.dart';
 
 class OnBoardingButtounContinue extends StatelessWidget {
   const OnBoardingButtounContinue({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class OnBoardingButtounContinue extends StatelessWidget {
           child: ElevatedButton(
             child: Text(
               '${controller.textButton}',
-              style: TextStyle(fontSize: 20 ,fontFamily: FontsApp.alkatra,
+              style: TextStyle(fontSize: 20 ,fontFamily: AppFonts.alkatra,
               ),
             ),
               style: ButtonStyle(
@@ -24,7 +25,7 @@ class OnBoardingButtounContinue extends StatelessWidget {
                 elevation: MaterialStatePropertyAll(5),
                 shape: MaterialStateProperty.all(RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10))),
-                backgroundColor:MaterialStatePropertyAll(ColorApp.primary),
+                backgroundColor:MaterialStatePropertyAll(AppColors.primary),
               ),
           onPressed: () {
             controller.next();

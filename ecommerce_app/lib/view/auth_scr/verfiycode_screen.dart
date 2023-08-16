@@ -1,19 +1,20 @@
 import 'package:ecommerce_app/controller/verfiycode_controller.dart';
-import 'package:ecommerce_app/core/constant/color_app.dart';
 import 'package:ecommerce_app/view/auth_scr/widget/custom_body.dart';
 import 'package:ecommerce_app/view/auth_scr/widget/custom_title.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+
+import '../../res/colors/app_colors.dart';
 class VerfiyCodeScreen extends StatelessWidget {
   VerfiyCodeScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     VerfiyCodeController verfiyCodeController = Get.put(VerfiyCodeController());
     return Scaffold(
-      backgroundColor: ColorApp.backgroundOnBoarding,
+      backgroundColor: AppColors.backgroundOnBoarding,
       appBar: AppBar(
-        backgroundColor: ColorApp.backgroundOnBoarding,
+        backgroundColor: AppColors.backgroundOnBoarding,
 
         centerTitle: true,
         elevation: 0,
@@ -51,8 +52,8 @@ class VerfiyCodeScreen extends StatelessWidget {
                   numberOfFields: 5,
                   fieldWidth: 50,
                   borderRadius: BorderRadius.circular(20),
-                  cursorColor:ColorApp.primary ,
-                  focusedBorderColor:  ColorApp.primary,
+                  cursorColor:AppColors.primary ,
+                  focusedBorderColor:  AppColors.primary,
                   borderColor: Color(0xFF512DA8),
                   //set to true to show as box or false to show as dash
                   showFieldAsBox: true,

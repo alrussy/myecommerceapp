@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
+import 'package:ecommerce_app/res/fonts/app_fonts.dart';
 import 'package:flutter/material.dart';
 
 class CustomTitleLogin extends StatelessWidget {
@@ -14,7 +14,7 @@ class CustomTitleLogin extends StatelessWidget {
         color: Colors.white,
         fontSize: 30,
         fontWeight: FontWeight.w500,
-        fontFamily: FontsApp.lobster,
+        fontFamily: AppFonts.lobster,
       ),
     );
   }

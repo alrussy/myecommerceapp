@@ -5,12 +5,10 @@
 
 
 import 'package:ecommerce_app/core/class/status_request.dart';
-import 'package:ecommerce_app/core/constant/route_app.dart';
 import 'package:ecommerce_app/core/function/handling_data.dart';
 import 'package:ecommerce_app/core/service/service.dart';
 import 'package:ecommerce_app/data/model/address.dart';
 import 'package:ecommerce_app/data/model/user_entity.dart';
-import 'package:ecommerce_app/data/response/api_response.dart';
 import 'package:ecommerce_app/data/services/address_service.dart';
 import 'package:ecommerce_app/res/routes/routes_name.dart';
 import 'package:flutter/material.dart';
@@ -72,7 +70,7 @@ class AddAddressController extends GetxController{
 
 
   goToLocationPage(){
-    Get.toNamed(RouteApp.LOCATION_PAGE);
+    Get.toNamed(RoutesName.LOCATION_PAGE);
   }
 
   @override

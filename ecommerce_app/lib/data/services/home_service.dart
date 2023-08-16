@@ -3,7 +3,6 @@
 
 
 
-import 'package:ecommerce_app/core/constant/url_app.dart';
 import 'package:ecommerce_app/data/model/user_entity.dart';
 import 'package:ecommerce_app/data/repository/repository.dart';
 import 'package:ecommerce_app/res/url/url_app.dart';

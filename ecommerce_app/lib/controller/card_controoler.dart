@@ -1,7 +1,6 @@
 
 
 
-import 'package:ecommerce_app/core/constant/route_app.dart';
 import 'package:ecommerce_app/data/data_local.dart';
 import 'package:ecommerce_app/data/model/my_card.dart';
 import 'package:ecommerce_app/data/model/Items.dart';
@@ -14,7 +13,7 @@ class CardController extends GetxController{
 
 
   goToItemDetailsPage(MyCard card){
-    Get.offNamed(RouteApp.ITEM_DETAILS_PAGE,arguments: {'card_item':card.item});
+    Get.offNamed(RoutesName.ITEM_DETAILS_PAGE,arguments: {'card_item':card.item});
   }
     increment(MyCard card){
       card.count=card.count!+1;

@@ -1,5 +1,5 @@
-import 'package:ecommerce_app/core/constant/route_app.dart';
 import 'package:ecommerce_app/core/service/service.dart';
+import 'package:ecommerce_app/res/routes/routes_name.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
@@ -13,7 +13,7 @@ class MiddleWareApp extends GetMiddleware{
   // if( serviceApp.sharedPrefere=='1'){
   // return RouteSettings(name:RouteApp.LOGIN);}
   // else if(serviceApp.sharedPreferences.getString('boarding')=='2'){
-    return RouteSettings(name:RouteApp.HOME_SCREEN);
+    return RouteSettings(name:RoutesName.BOTTOM_NAVIGAITION_BAR_BAGE);
   }
 
   }

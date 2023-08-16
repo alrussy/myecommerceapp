@@ -1,8 +1,8 @@
 
 
-import 'package:ecommerce_app/core/constant/route_app.dart';
 import 'package:ecommerce_app/core/service/service.dart';
 import 'package:ecommerce_app/data/data_local.dart';
+import 'package:ecommerce_app/res/routes/routes_name.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
@@ -31,7 +31,7 @@ class OnBoardingController extends GetxController{
 
      if(currentPage>lastPage){
       // serviceApp.sharedPreferences.setString('boarding', '1');
-      Get.offNamed(RouteApp.LOGIN);
+      Get.offNamed(RoutesName.LOGIN);
      }
     else{
       pageController?.animateToPage(currentPage, duration: const Duration(milliseconds: 500),

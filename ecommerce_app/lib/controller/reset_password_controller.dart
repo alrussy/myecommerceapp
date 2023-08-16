@@ -1,6 +1,6 @@
 
-import 'package:ecommerce_app/core/constant/route_app.dart';
 import 'package:ecommerce_app/data/services/rest_password.dart';
+import 'package:ecommerce_app/res/routes/routes_name.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
@@ -38,7 +38,7 @@ class ResetPasswordController extends GetxController{
         if (statusRequest == StatusRequest.SUCCESS) {
           await Get.defaultDialog(
               title: 'Alert', middleText: statusRequest.toString());
-          Get.offAllNamed(RouteApp.LOGIN);
+          Get.offAllNamed(RoutesName.LOGIN);
         }
         else {
           Get.defaultDialog(

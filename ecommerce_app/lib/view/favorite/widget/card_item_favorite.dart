@@ -1,8 +1,5 @@
 import 'package:ecommerce_app/controller/favorite_controller.dart';
 import 'package:ecommerce_app/controller/item_controller.dart';
-import 'package:ecommerce_app/core/constant/color_app.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
-import 'package:ecommerce_app/core/constant/image_assets.dart';
 import 'package:ecommerce_app/data/model/Items.dart';
 import 'package:ecommerce_app/data/model/favorite.dart';
 import 'package:ecommerce_app/res/colors/app_colors.dart';

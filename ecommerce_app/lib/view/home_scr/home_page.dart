@@ -3,9 +3,6 @@ import 'package:ecommerce_app/controller/home_controller.dart';
 import 'package:ecommerce_app/controller/test_controller.dart';
 import 'package:ecommerce_app/core/class/handle_data_view.dart';
 import 'package:ecommerce_app/core/class/status_request.dart';
-import 'package:ecommerce_app/core/constant/color_app.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
-import 'package:ecommerce_app/core/constant/image_assets.dart';
 import 'package:ecommerce_app/core/service/service.dart';
 import 'package:ecommerce_app/data/app_exceptions.dart';
 import 'package:ecommerce_app/data/model/Items.dart';
@@ -13,6 +10,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../res/fonts/app_fonts.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
@@ -197,7 +196,7 @@ class HomePage extends StatelessWidget {
         ),
         Flexible(
           child: TextField(
-            style: TextStyle(fontSize: 20, fontFamily: FontsApp.alkatra),
+            style: TextStyle(fontSize: 20, fontFamily: AppFonts.alkatra),
             decoration: InputDecoration(
               hintText: 'Search',
               hintStyle: TextStyle(color: Colors.black45),

@@ -1,7 +1,6 @@
 import 'package:ecommerce_app/controller/login_controller.dart';
-import 'package:ecommerce_app/core/constant/color_app.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
 import 'package:ecommerce_app/res/colors/app_colors.dart';
+import 'package:ecommerce_app/res/fonts/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -46,9 +45,9 @@ class CustomTextField extends GetView<LoginController> {
         filled: true,
         hintText: hintText,
         label: Text(label),
-        hintStyle: TextStyle(fontFamily: FontsApp.alkatra),
+        hintStyle: TextStyle(fontFamily: AppFonts.alkatra),
         labelStyle:
-            TextStyle(fontFamily: FontsApp.alkatra, color: AppColors.primary),
+            TextStyle(fontFamily: AppFonts.alkatra, color: AppColors.primary),
         contentPadding: EdgeInsets.only(left: 20),
         border: OutlineInputBorder(
           borderSide: BorderSide.none,

@@ -4,7 +4,6 @@ import 'package:ecommerce_app/res/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../core/constant/color_app.dart';
 
 
 

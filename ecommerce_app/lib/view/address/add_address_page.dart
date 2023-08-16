@@ -1,8 +1,6 @@
 
 
 import 'package:ecommerce_app/controller/AddAddressController.dart';
-import 'package:ecommerce_app/core/constant/color_app.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
 import 'package:ecommerce_app/res/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -43,7 +41,7 @@ class AddAddressPage extends StatelessWidget {
           controller: addAddressController.nameController,
           style: TextStyle(
             fontSize: 18,
-            color: ColorApp.text,
+            color: AppColors.text,
           ),
           autofocus: true,
           decoration: InputDecoration(
@@ -60,7 +58,7 @@ class AddAddressPage extends StatelessWidget {
             controller: addAddressController.cityController,
             style: TextStyle(
               fontSize: 18,
-              color: ColorApp.text,
+              color: AppColors.text,
             ),
             autofocus: true,
             decoration: InputDecoration(
@@ -78,7 +76,7 @@ class AddAddressPage extends StatelessWidget {
             controller: addAddressController.regionController,
             style: TextStyle(
               fontSize: 18,
-              color: ColorApp.text,
+              color: AppColors.text,
             ),
             autofocus: true,
             decoration: InputDecoration(
@@ -96,7 +94,7 @@ class AddAddressPage extends StatelessWidget {
             controller: addAddressController.streetController,
             style: TextStyle(
               fontSize: 18,
-              color: ColorApp.text,
+              color: AppColors.text,
             ),
             autofocus: true,
             decoration: InputDecoration(
@@ -113,7 +111,7 @@ class AddAddressPage extends StatelessWidget {
             controller: addAddressController.otherController,
             style: TextStyle(
               fontSize: 18,
-              color: ColorApp.text,
+              color: AppColors.text,
             ),
             maxLines: 3,
             autofocus: true,

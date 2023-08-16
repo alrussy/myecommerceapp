@@ -179,21 +179,7 @@ productListVerticalWidget() {
                                 style: TextStyle(
                                     fontSize: 18, fontFamily: 'Cairo-Medium'),
                               ),
-                              Text.rich(TextSpan(
-                                  text:
-                                      '${controller.productsData[index].price}',
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      color: Color(0xff3EB86F),
-                                      fontFamily: 'Cairo-Medium'),
-                                  children: [
-                                    TextSpan(
-                                        text: ' دولار',
-                                        style: TextStyle(
-                                            fontFamily: 'Cairo-Medium',
-                                            color: Color(0xff3E3E68),
-                                            fontSize: 12))
-                                  ])),
+
                               Container(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: 10, vertical: 5),

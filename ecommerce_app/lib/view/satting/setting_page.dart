@@ -1,10 +1,10 @@
 
 import 'package:ecommerce_app/controller/setting_controller.dart';
-import 'package:ecommerce_app/core/constant/color_app.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
 import 'package:ecommerce_app/res/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../res/fonts/app_fonts.dart';
 
 
 
@@ -24,7 +24,7 @@ class SettingPage extends StatelessWidget {
             Container(
               height: 250,
               decoration: BoxDecoration(
-                color: ColorApp.primary,
+                color: AppColors.primary,
                 borderRadius: BorderRadius.vertical(bottom: Radius.circular(20)),
               )
               ,
@@ -39,7 +39,7 @@ class SettingPage extends StatelessWidget {
                 alignment: Alignment.center,
                 decoration:BoxDecoration(
                   border: Border.all(width: 5,color: Colors.white),
-                  color: ColorApp.text,
+                  color: AppColors.text,
                   shape: BoxShape.circle
                 ),
               ),
@@ -63,7 +63,7 @@ class SettingPage extends StatelessWidget {
 Widget customListTile(String title,String subTitle,IconData icon,Function()? action ){
  return ListTile(
     onTap:action,
-    title:Text(title,style: const TextStyle(fontFamily: FontsApp.alkatra,fontSize: 20,color: ColorApp.text),),
+    title:Text(title,style: const TextStyle(fontFamily: AppFonts.alkatra,fontSize: 20,color: AppColors.text),),
     subtitle: Text(subTitle),
     leading: Icon(icon,color: AppColors.primary,)
   );

@@ -1,9 +1,10 @@
 import 'package:ecommerce_app/controller/item_by_product_controller.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
 import 'package:ecommerce_app/res/colors/app_colors.dart';
 import 'package:ecommerce_app/res/routes/routes_name.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../res/fonts/app_fonts.dart';
 
 class ItemsByProductPage extends StatelessWidget {
   ItemsByProductPage({Key? key}) : super(key: key);
@@ -47,7 +48,7 @@ class ItemsByProductPage extends StatelessWidget {
         ),
         Flexible(
           child: TextField(
-            style: TextStyle(fontSize: 20, fontFamily: FontsApp.alkatra),
+            style: TextStyle(fontSize: 20, fontFamily: AppFonts.alkatra),
             decoration: InputDecoration(
               hintText: 'Search',
               hintStyle: TextStyle(color: Colors.black45),

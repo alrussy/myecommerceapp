@@ -1,9 +1,6 @@
 import 'package:ecommerce_app/controller/login_controller.dart';
 import 'package:ecommerce_app/core/class/handle_data_view.dart';
 import 'package:ecommerce_app/core/function/alert_exit_app.dart';
-import 'package:ecommerce_app/core/constant/color_app.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
-import 'package:ecommerce_app/core/constant/route_app.dart';
 import 'package:ecommerce_app/core/function/validation_Input.dart';
 import 'package:ecommerce_app/res/colors/app_colors.dart';
 import 'package:ecommerce_app/utils/utils.dart';
@@ -14,6 +11,8 @@ import 'package:ecommerce_app/view/auth_scr/widget/custom_text_field.dart';
 import 'package:ecommerce_app/view/auth_scr/widget/custom_title.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../res/fonts/app_fonts.dart';
 
 class Login extends StatelessWidget {
   Login({Key? key}) : super(key: key);
@@ -127,7 +126,7 @@ class Login extends StatelessWidget {
                                           "do you have not an accuont ?",
                                           style: TextStyle(
                                               color: Colors.black,
-                                              fontFamily: FontsApp.cairo),
+                                              fontFamily: AppFonts.cairo),
                                         ),
                                         TextButton(
                                             onPressed: () {
@@ -143,7 +142,7 @@ class Login extends StatelessWidget {
                                               style: TextStyle(
                                                   color: AppColors.primary,
                                                   fontSize: 18,
-                                                  fontFamily: FontsApp.alkatra),
+                                                  fontFamily: AppFonts.alkatra),
                                             )),
                                       ],
                                     ),
@@ -162,7 +161,7 @@ class Login extends StatelessWidget {
                                           style: TextStyle(
                                             fontSize: 15,
                                             letterSpacing: 1,
-                                            fontFamily: FontsApp.sriracha,
+                                            fontFamily: AppFonts.sriracha,
                                           ),
                                         )),
                                   ],

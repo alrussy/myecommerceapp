@@ -3,7 +3,8 @@ import 'package:ecommerce_app/data/data_local.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../core/constant/color_app.dart';
+import '../../../res/colors/app_colors.dart';
+
 
 class OnBoardingDotController extends StatelessWidget {
   const OnBoardingDotController({Key? key}) : super(key: key);
@@ -22,7 +23,7 @@ class OnBoardingDotController extends StatelessWidget {
             width: controller.currentPage==index?15:8,
             height: 8,
             decoration: BoxDecoration(
-              color: controller.currentPage==index?ColorApp.primary:Colors.grey,
+              color: controller.currentPage==index?AppColors.primary:Colors.grey,
               borderRadius: BorderRadius.circular(15),
             ),
           );

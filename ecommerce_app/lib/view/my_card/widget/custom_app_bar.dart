@@ -1,8 +1,9 @@
 
 
 
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
 import 'package:flutter/material.dart';
+
+import '../../../res/fonts/app_fonts.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class CustomAppBar extends StatelessWidget {
           child: Container(
               margin: EdgeInsets.only(right: 20),
               alignment: Alignment.center,
-              child: Text('My Card',style: TextStyle(fontFamily: FontsApp.alkatra,fontSize: 25),)
+              child: Text('My Card',style: TextStyle(fontFamily: AppFonts.alkatra,fontSize: 25),)
           ),
         )
       ],

@@ -2,9 +2,9 @@
 
 
 
-import 'package:ecommerce_app/core/constant/route_app.dart';
 import 'package:ecommerce_app/data/data_local.dart';
 import 'package:ecommerce_app/data/model/my_card.dart';
+import 'package:ecommerce_app/res/routes/routes_name.dart';
 import 'package:get/get.dart';
 
 import '../data/model/Items.dart';
@@ -32,7 +32,7 @@ class ItemDetailsController extends GetxController{
     }
   }
   goToMyCard(){
-    Get.offNamed(RouteApp.MY_CARD_PAGE,);
+    Get.offNamed(RoutesName.MY_CARD_PAGE,);
   }
 
 
@@ -62,7 +62,7 @@ class ItemDetailsController extends GetxController{
 
   @override
   void onInit() {
-    item=Get.previousRoute==RouteApp.MY_CARD_PAGE?Get.arguments['card_item']:Get.arguments['item'];
+    item=Get.previousRoute==RoutesName.MY_CARD_PAGE?Get.arguments['card_item']:Get.arguments['item'];
    count=setCount(item);
     super.onInit();
   }

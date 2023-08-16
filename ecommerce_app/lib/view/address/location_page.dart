@@ -1,9 +1,8 @@
 
 
 
-import 'package:ecommerce_app/core/constant/color_app.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
 import 'package:ecommerce_app/res/colors/app_colors.dart';
+import 'package:ecommerce_app/res/fonts/app_fonts.dart';
 import 'package:flutter/material.dart';
 
 class LocationPage extends StatelessWidget {
@@ -34,13 +33,13 @@ class LocationPage extends StatelessWidget {
                         fit: BoxFit.fill,
                       ),
                       SizedBox(height: 10,),
-                      Text('item 1',style: TextStyle(fontFamily: FontsApp.alkatra,fontWeight: FontWeight.bold),),
+                      Text('item 1',style: TextStyle(fontFamily: AppFonts.alkatra,fontWeight: FontWeight.bold),),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          Text('200\$',style: TextStyle(color:ColorApp.primary,fontFamily: FontsApp.alkatra,fontWeight: FontWeight.bold),),
+                          Text('200\$',style: TextStyle(color:AppColors.primary,fontFamily: AppFonts.alkatra,fontWeight: FontWeight.bold),),
                           IconButton(onPressed: (){
-                          }, icon: Icon(Icons.favorite) ,color: ColorApp.primary)
+                          }, icon: Icon(Icons.favorite) ,color: AppColors.primary)
                         ],
                       )
                     ],
@@ -62,7 +61,7 @@ class LocationPage extends StatelessWidget {
               top: -20,
               child: CircleAvatar(
                 radius: 30,
-                backgroundColor: ColorApp.primary,
+                backgroundColor: AppColors.primary,
                 child: Text('20%',style: TextStyle(fontSize:20,fontWeight:FontWeight.bold,color: Colors.white),),
 
                 ),

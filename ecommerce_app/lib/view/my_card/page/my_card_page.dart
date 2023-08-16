@@ -1,14 +1,13 @@
 
 
 import 'package:ecommerce_app/controller/card_controoler.dart';
-import 'package:ecommerce_app/core/constant/color_app.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
 import 'package:ecommerce_app/res/colors/app_colors.dart';
 import 'package:ecommerce_app/view/my_card/widget/custom_List_tile.dart';
 import 'package:ecommerce_app/view/my_card/widget/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../res/fonts/app_fonts.dart';
 import '../widget/order_button_widget.dart';
 
 class MyCardPage extends StatelessWidget {
@@ -37,8 +36,8 @@ class MyCardPage extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text('Total Of Order :',style: TextStyle(fontSize: 20,fontFamily: FontsApp.alkatra),),
-                Text('${controller.getTotal()}',style: TextStyle(color:AppColors.primary,fontSize: 20,fontFamily: FontsApp.alkatra),)
+                Text('Total Of Order :',style: TextStyle(fontSize: 20,fontFamily: AppFonts.alkatra),),
+                Text('${controller.getTotal()}',style: TextStyle(color:AppColors.primary,fontSize: 20,fontFamily: AppFonts.alkatra),)
 
               ],
             ),

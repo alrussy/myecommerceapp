@@ -6,10 +6,10 @@ import 'package:ecommerce_app/core/function/handling_data.dart';
 import 'package:ecommerce_app/data/model/user_entity.dart';
 import 'package:ecommerce_app/data/services/forget_password_service.dart';
 import 'package:ecommerce_app/data/services/verifiy_code_service.dart';
+import 'package:ecommerce_app/res/routes/routes_name.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
-import '../core/constant/route_app.dart';
 
 class ForgetPasswordController extends GetxController{
 
@@ -44,7 +44,7 @@ class ForgetPasswordController extends GetxController{
     statusRequest=handlingData(response);
     if(statusRequest==StatusRequest.SUCCESS){
       vcode=response.toString();
-      Get.toNamed(RouteApp.VERFIY_CODE, arguments: {'code':vcode,'user':user2});
+      Get.toNamed(RoutesName.VERFIY_CODE, arguments: {'code':vcode,'user':user2});
     }
     update();
   }

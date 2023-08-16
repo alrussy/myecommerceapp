@@ -1,9 +1,8 @@
 import 'package:ecommerce_app/core/class/status_request.dart';
-import 'package:ecommerce_app/core/constant/route_app.dart';
-import 'package:ecommerce_app/core/function/check_internet.dart';
 import 'package:ecommerce_app/core/function/handling_data.dart';
 import 'package:ecommerce_app/data/model/user_entity.dart';
 import 'package:ecommerce_app/data/services/verifiy_code_service.dart';
+import 'package:ecommerce_app/res/routes/routes_name.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
@@ -36,7 +35,7 @@ class SignUpController extends GetxController {
 
 
   signIn() {
-    Get.offNamed(RouteApp.LOGIN);
+    Get.offNamed(RoutesName.LOGIN);
   }
 
 
@@ -55,7 +54,7 @@ class SignUpController extends GetxController {
       statusRequest=handlingData(response);
       if(statusRequest==StatusRequest.SUCCESS){
         vcode=response.toString();
-        await Get.toNamed(RouteApp.VERFIY_CODE, arguments: {'code':vcode,'user':user});
+        await Get.toNamed(RoutesName.VERFIY_CODE, arguments: {'code':vcode,'user':user});
       }
     }
       update();

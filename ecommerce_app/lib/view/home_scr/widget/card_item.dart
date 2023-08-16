@@ -1,10 +1,10 @@
 import 'package:ecommerce_app/controller/item_controller.dart';
-import 'package:ecommerce_app/core/constant/color_app.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
-import 'package:ecommerce_app/core/constant/image_assets.dart';
 import 'package:ecommerce_app/data/model/Items.dart';
+import 'package:ecommerce_app/res/fonts/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../../res/colors/app_colors.dart';
 
 class CardItems extends GetView<ItemController> {
   CardItems({Key? key,required this.item,required this.isFav}) : super(key: key);
@@ -33,7 +33,7 @@ class CardItems extends GetView<ItemController> {
                       ),
                     ),
                     SizedBox(height: 10,),
-                    Text('${item.name}',style: TextStyle(fontFamily: FontsApp.alkatra,fontWeight: FontWeight.bold),),
+                    Text('${item.name}',style: TextStyle(fontFamily: AppFonts.alkatra,fontWeight: FontWeight.bold),),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
@@ -42,20 +42,20 @@ class CardItems extends GetView<ItemController> {
                             Text(
                               '${item.price} \$',
                               style: TextStyle(
-                                  color:ColorApp.primary,
-                                  fontFamily: FontsApp.alkatra,fontWeight: FontWeight.w300,
+                                  color:AppColors.primary,
+                                  fontFamily: AppFonts.alkatra,fontWeight: FontWeight.w300,
                                 decoration: TextDecoration.lineThrough
                               ),
                             ),
-                            Text('${item.priceAfterDescount} \$',style: TextStyle(color:ColorApp.primary,fontFamily: FontsApp.alkatra,fontWeight: FontWeight.bold),),
+                            Text('${item.priceAfterDescount} \$',style: TextStyle(color:AppColors.primary,fontFamily: AppFonts.alkatra,fontWeight: FontWeight.bold),),
 
                           ],
                         ):Text(
                           '${item.price} \$',
-                          style: TextStyle(color:ColorApp.primary,fontFamily: FontsApp.alkatra,fontWeight: FontWeight.bold),),
+                          style: TextStyle(color:AppColors.primary,fontFamily: AppFonts.alkatra,fontWeight: FontWeight.bold),),
                         IconButton(onPressed: (){
                           //controller.checkFavorite(item);
-                        }, icon: Icon(item.isFavorite?Icons.favorite:Icons.favorite_border_outlined) ,color: ColorApp.primary)
+                        }, icon: Icon(item.isFavorite?Icons.favorite:Icons.favorite_border_outlined) ,color: AppColors.primary)
                       ],
                     )
                   ],
@@ -77,7 +77,7 @@ class CardItems extends GetView<ItemController> {
             top: 0,
             child: CircleAvatar(
               radius: 25,
-              backgroundColor: ColorApp.primary,
+              backgroundColor: AppColors.primary,
               child: Text('${item.desCount!.toInt()}%',style: TextStyle(fontSize:15,fontWeight:FontWeight.bold,color: Colors.white),),
 
             ),

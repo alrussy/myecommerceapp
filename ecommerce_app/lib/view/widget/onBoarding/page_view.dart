@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/controller/onboarding_controller.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
 import 'package:ecommerce_app/data/data_local.dart';
+import 'package:ecommerce_app/res/fonts/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -32,7 +32,7 @@ class OnBoardingPageView extends GetView<OnBoardingController> {
                       onBoardingList[index].title!,
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          fontFamily: FontsApp.alkatra,
+                          fontFamily: AppFonts.alkatra,
                           fontWeight: FontWeight.bold,
                           fontSize: 25),
                     ),
@@ -45,7 +45,7 @@ class OnBoardingPageView extends GetView<OnBoardingController> {
                       onBoardingList[index].body!,
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontFamily: FontsApp.alkatra,
+                        fontFamily: AppFonts.alkatra,
                         wordSpacing: 1,
                         fontWeight: FontWeight.w500,
                         fontSize: 15,

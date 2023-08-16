@@ -2,12 +2,11 @@
 
 import 'dart:io';
 
+import 'package:ecommerce_app/core/class/status_request.dart';
+import 'package:ecommerce_app/res/colors/app_colors.dart';
 import 'package:ecommerce_app/res/fonts/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import '../core/constant/color_app.dart';
-import '../core/constant/fonts_app.dart';
 
 class Utils{
 
@@ -43,9 +42,9 @@ static showErrorDialog(String title,String message) {
                     shape: MaterialStatePropertyAll(RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20))),
                     backgroundColor:
-                    MaterialStatePropertyAll(ColorApp.primary)),
+                    MaterialStatePropertyAll(AppColors.primary)),
                 child: const Text('Ok',
-                  style: TextStyle(fontFamily: FontsApp.alkatra),
+                  style: TextStyle(fontFamily: AppFonts.alkatra),
                 ),
               ),
             ],
@@ -68,4 +67,11 @@ static showErrorDialog(String title,String message) {
     if(Get.isDialogOpen!) Get.back();
   }
 
+
+   static handlingData(response){
+    if(response is StatusRequest){
+      return response;
+    }
+    return StatusRequest.SUCCESS;
+  }
 }

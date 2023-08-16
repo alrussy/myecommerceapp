@@ -3,8 +3,6 @@
 
 import 'package:ecommerce_app/controller/address_controller.dart';
 import 'package:ecommerce_app/core/class/handle_data_view.dart';
-import 'package:ecommerce_app/core/constant/color_app.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
 import 'package:ecommerce_app/res/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

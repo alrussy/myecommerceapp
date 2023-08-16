@@ -1,11 +1,12 @@
 import 'package:ecommerce_app/controller/checkout_controller.dart';
-import 'package:ecommerce_app/core/constant/color_app.dart';
-import 'package:ecommerce_app/core/constant/fonts_app.dart';
+
 import 'package:ecommerce_app/res/colors/app_colors.dart';
 import 'package:ecommerce_app/res/routes/routes_name.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
+
+import '../../res/fonts/app_fonts.dart';
 
 class CheckOutPage extends StatelessWidget {
   const CheckOutPage({Key? key}) : super(key: key);
@@ -18,8 +19,8 @@ class CheckOutPage extends StatelessWidget {
           title: Text('Checkout'),
           titleTextStyle: TextStyle(
               fontSize: 25,
-              fontFamily: FontsApp.alkatra,
-              color: ColorApp.backgroundOnBoarding),
+              fontFamily: AppFonts.alkatra,
+              color: AppColors.backgroundOnBoarding),
           centerTitle: true,
           backgroundColor: AppColors.primary,
         ),
@@ -31,7 +32,7 @@ class CheckOutPage extends StatelessWidget {
               children: [
                 const Text(
                   'Chose Payment method :',
-                  style: TextStyle(fontSize: 20, fontFamily: FontsApp.alkatra),
+                  style: TextStyle(fontSize: 20, fontFamily: AppFonts.alkatra),
                 ),
                 Row(
                   children: [
@@ -55,7 +56,7 @@ class CheckOutPage extends StatelessWidget {
                 ),
                 const Text(
                   'Chose Delivery Type :',
-                  style: TextStyle(fontSize: 20, fontFamily: FontsApp.alkatra),
+                  style: TextStyle(fontSize: 20, fontFamily: AppFonts.alkatra),
                 ),
                 Row(
                   children: [
